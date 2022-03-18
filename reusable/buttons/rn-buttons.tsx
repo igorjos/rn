@@ -1,7 +1,8 @@
 import React from "react"
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Text, TouchableOpacity, View } from "react-native"
-import { eIconSide, iDefaultButton, iGroupButtons, iIconButton } from "./rn-buttons.interface";
+import { iDefaultButton, iGroupButtons, iIconButton } from "./rn-buttons.interface";
+import { eIconSide } from '@reusable/interfaces/common';
 import { buttonStyle, groupContainerStyle, iconButtonStyle } from "./rn-buttons.style";
 
 

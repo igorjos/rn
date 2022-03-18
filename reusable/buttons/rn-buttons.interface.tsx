@@ -1,3 +1,4 @@
+import { eIconSide } from "@reusable/interfaces/common"
 
 export interface iDefaultButton
 {
@@ -13,12 +14,6 @@ export interface iIconButton extends iDefaultButton
 	iconSide: eIconSide,
 	iconStyle?: any,
 	iconSize?:number
-}
-
-export enum eIconSide
-{
-	LEFT = 'left',
-	RIGHT = 'right'
 }
 
 export interface iGroupButtons
