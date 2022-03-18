@@ -7,7 +7,7 @@ import { buttonStyle, groupContainerStyle, iconButtonStyle } from "./rn-buttons.
 
 const renderTextAndIcon = (props:iIconButton) => {
 	const items = [
-		<Icon key={1} name={props.icon} size={props.iconSize || 18} style={{...props.iconStyle}}/>,
+		<Icon key={1} name={props.icon} size={props.iconSize} style={{...props.iconStyle}}/>,
 		<Text key={2} style={{...props.textStyle}}>{props.title}</Text>
 	];
 
@@ -19,8 +19,8 @@ const renderTextAndIcon = (props:iIconButton) => {
 
 const DefaultButton = (props:iDefaultButton) => {
 	return <TouchableOpacity 
-			style={{...buttonStyle, ...props.style}} 
-			onPressOut={() => props.onPressOut}
+			style={{...buttonStyle, ...props.buttonStyle}} 
+			{...props}
 			>
 			<Text style={{...props.textStyle}}>{props.title}</Text>
 	</TouchableOpacity>
@@ -28,15 +28,15 @@ const DefaultButton = (props:iDefaultButton) => {
 
 const IconButton = (props:iIconButton) => {
 	return <TouchableOpacity 
-			style={{...iconButtonStyle, ...props.style}} 
-			onPressOut={() => props.onPressOut}
+			style={{...iconButtonStyle, ...props.buttonStyle}} 
+			{...props}
 			>
 			{renderTextAndIcon(props)}
 	</TouchableOpacity>
 }
 
 const GroupButton = (props:iGroupButtons) => {
-	return <View style={{...groupContainerStyle, ...props.style}}>{props.buttons}</View>
+	return <View style={{...groupContainerStyle, ...props.groupButtonsWrapperStyle}}>{props.buttons}</View>
 }
 
 
