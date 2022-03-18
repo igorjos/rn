@@ -2,7 +2,7 @@
 export interface iDefaultButton
 {
 	title:string,
-	style?:any,
+	buttonStyle?:any,
 	textStyle?:any,
 	onPressOut?:any
 }
@@ -23,6 +23,6 @@ export enum eIconSide
 
 export interface iGroupButtons
 {
-	style?:any,
+	groupButtonsWrapperStyle?:any,
 	buttons?:Array<any>
 }
