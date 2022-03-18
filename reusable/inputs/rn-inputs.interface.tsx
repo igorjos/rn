@@ -1,3 +1,4 @@
+import {eIconSide} from "@reusable/interfaces/common";
 
 export interface iInput
 {
@@ -14,7 +15,7 @@ export interface iIconInput extends iInput
 	name:string,
 	size:number,
 	iconStyle?:any,
-	iconSide: eInputIcon,
+	iconSide: eIconSide,
 	iconWraperStyle?:any
 }
 
@@ -22,10 +23,4 @@ export interface iGroupInput
 {
 	inputs:Array<any>,
 	wrapperStyle?:any
-}
-
-export enum eInputIcon 
-{
-	LEFT = 'left',
-	RIGHT = 'right'
 }
