@@ -2,7 +2,8 @@
 import React from "react"
 import { TextInput, View } from "react-native"
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import { eInputIcon, iGroupInput, iIconInput, iInput } from "./rn-inputs.interface"
+import { iGroupInput, iIconInput, iInput } from "./rn-inputs.interface"
+import { eIconSide } from "@reusable/interfaces/common"
 import { groupInputWrapperStyle, iconInputWrapperStyle } from "./rn-inputs.style"
 
 
@@ -20,7 +21,7 @@ const _renderInput = (props:iIconInput) => {
 		<DefaultInput key={1} {...props}/>
 	]
 
-	if(props.iconSide === eInputIcon.LEFT)
+	if(props.iconSide === eIconSide.LEFT)
 	return inputs;
 	else
 	return inputs.reverse();
