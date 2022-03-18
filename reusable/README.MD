@@ -3,7 +3,7 @@ Reusable folder
 
 # Usage
 
-`
+```javascript
 const App = () => {
 
   const test = () => {
@@ -27,4 +27,4 @@ const App = () => {
     ]} />
   </View>)
 };
-`
+```
