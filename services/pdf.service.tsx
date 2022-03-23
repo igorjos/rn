@@ -1,5 +1,5 @@
 import React from 'react';
-import { Permission, PermissionsAndroid } from 'react-native';
+import { PermissionsAndroid } from 'react-native';
 import RNHTMLtoPDF from 'react-native-html-to-pdf';
 import moment from 'moment';
 
